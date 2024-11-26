@@ -56,7 +56,7 @@ body {
 
     /* Animations */
     animation-name: animationModel;
-    animation-duration: .4s;
+    animation-duration: .5s;
 }
 
 #close #close-btn {
@@ -72,7 +72,6 @@ body {
 }
 
 #model-container {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -81,4 +80,24 @@ body {
     z-index: 1;
 }
 
-/* sdfsd */
+.invisible {
+    display: none;
+}
+
+.darkEffect {
+    background-color: rgba(0, 0, 0, .5);
+    transition: .2s;
+}
+
+/* Model animation sections */
+@keyframes animationModel {
+    from {
+        top: -100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
